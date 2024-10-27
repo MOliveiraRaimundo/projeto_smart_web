@@ -54,7 +54,7 @@ nav{
 }
 
 .main-banner{
-    background-image: url(assets/banner-img.jpg);
+    background-image: url(../assets/banner-img.jpg);
     background-size: cover;
     background-position: center;
 }
