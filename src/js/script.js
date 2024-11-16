@@ -4,6 +4,7 @@ const emailInput = document.querySelector("#email")
 const messageText = document.querySelector("#message")
 const btnEnviar = document.querySelector("#btn-enviar")
 const msgFeedback = document.querySelector("#msgFeedBack")
+const descricao = document.querySelector(".descricao")
 
 
 function enviarContato(){
@@ -21,7 +22,7 @@ function enviarContato(){
 
     nameInputValue = "";
     emailInputValue = "";
-    messageTextValue = "";
+    messageTextValue = "";  
 }
 
 function isEmailValid(email){
@@ -31,8 +32,8 @@ function isEmailValid(email){
     if(emailRegex.test(email)){
         return true;
     }
-        
-    return false;
+
+    return false
     
 }
 
