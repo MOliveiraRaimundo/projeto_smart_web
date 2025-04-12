@@ -31,8 +31,8 @@
             </nav>
         </div>
         <main>
-            <div class="main-banner">
-                <div id="banner-layer">
+            <div id="carrossel">
+                <div class="main-banner">
                     <h1 class="title">Smart Web</h1>
                     <p class="sub-title-main">
                         Transforme sua ideia em realidade agora!
@@ -41,9 +41,14 @@
                         Estamos prontos para ajudar sua empresa a alcançar novos horizontes, inovando e ampliando suas possibilidades. Juntos, podemos fazer o impossível se tornar possível. 
                         Fale conosco e descubra como podemos realizar o seu sonho com a força da tecnologia!
                     </p>
+                    <button id="btn_fale-conosco">Fale Conosco</button>
+                </div>
+               
+                <div id="banner-layer">
+                    <img id="img-carrossel" src="./assets/banner-img - Copia.jpg" alt="">
                 </div>
             </div>
-            
+
             <!--------SEÇÃO DE SOBRE------------>
             <div class="section-sobre">
                 <h1 id="title">Smart Web</h1>
@@ -84,7 +89,7 @@
                             Ser referência em inovação tecnológica, criando soluções digitais que transformam 
                             empresas e contribuem para a evolução do mercado. Buscamos ser a escolha número um 
                             de nossos clientes, com soluções ágeis, eficientes e sustentáveis. Nosso objetivo é 
-                            crescer de forma sólida, impactando positivamente o ecossistema digital e liderando a 
+                            crescer de forma sólida, impactando positivamente área digital e liderando a 
                             transformação através de tecnologias que otimizam processos e geram valor real para nossos 
                             parceiros.
                         </p>
@@ -217,8 +222,8 @@
                         <!-------------INÍCIO LUCAS----------------------------------->
                         <div class="information">
                             <div class="name-function">
-                                <h3>Lucas</h3>
-                                <h2> Front-End / Design</h2>
+                                <h3>Lucas Ribeiro</h3>
+                                <h2> Front-End | Design</h2>
                                 <button class="btnSaibaMais" id="btnLucas">Saiba mais</button>
                             </div>
                                <img class="img-persona" src="assets/lucas.png" alt="">
@@ -229,28 +234,39 @@
                         <div class="information">
                             <div class="name-function">
                                 <h3>Michael Oliveira</h3>
-                                <h2>Full Stack</h2>
+                                <h2>Front-End</h2>
                                 <button class="btnSaibaMais" id="btnMichael">Saiba mais</button>
                             </div>
                                 <img class="img-persona" src="assets/michael.png" alt="">
                         </div><!-------------FIM MICHAEL----------------------------------->
 
 
-                        <!-------------INÍCIO AMANDA----------------------------------->
+                        <!-------------INÍCIO GLEICE----------------------------------->
                         <div class="information">
                             <div class="name-function">
-                                <h3>Amanda</h3>
-                                <h2>Front-End</h2>
-                                <button class="btnSaibaMais" id="btnAmanda">Saiba mais</button>
+                                <h3>Gleciane</h3>
+                                <h2>Full Stack</h2>
+                                <button class="btnSaibaMais" id="btnGleice">Saiba mais</button>
                             </div>
-                                <img class="img-persona" src="assets/amanda.png" alt="">
-                        </div><!-------------FIM AMANDA----------------------------------->
-                    </div> <!--  ------------FIM DOS MEMBROS----------------------------------->
+                                <img class="img-persona" src="./assets/gleiciane.jpg" alt="">
+                        </div><!-------------FIM GLEICE----------------------------------->
+                    
+                        <!-------------INÍCIO ALESSANDRO----------------------------------->
+                        <div class="information">
+                            <div class="name-function">
+                                <h3>Alessandro</h3>
+                                <h2>Full Stack</h2>
+                                <button class="btnSaibaMais" id="btnAlessandro">Saiba mais</button>
+                            </div>
+                                <img class="img-persona" src="./assets/login-img.png" alt="">
+                        </div><!-------------FIM ALESSANDRO-------------------------------->
+                    </div> <!--------------FIM DOS MEMBROS----------------------------------->
                 </div>
             </section><!----------------FIM DA SEÇÃO MEMBROS----------------------------->
 
 
                        <!------------------CARDS DOS MEMBROS---------------------->
+                       <div id="mascara"></div>
             <div class="cards1 positionCards">
                 <div class="img-lucas">
                     <img class="img-persona-card" src="./assets/gabriel.png"> 
@@ -258,7 +274,15 @@
                 <div class="text-cards">
                     <h2 class="name">Gabriel</h2>
                     <h3 class="cargo">Full Stack</h3>
-                    <p>Usa a experiência para criar soluções intuitivas, </p>
+                    <p>
+                        Sou desenvolvedor full stack e tenho paixão
+                        por transformar ideias em soluções digitais. 
+                        Gosto de entender as necessidades de cada projeto e
+                        criar aplicações completas, do front ao back-end,
+                        sempre com foco em performance, usabilidade e
+                        resultado. Estou aqui para ajudar você a tirar
+                        seu projeto do papel com tecnologia e criatividade.    
+                    </p>
                 </div>
                 <img src="./assets/btn_fechar.png" class="btnFechar" alt="">
             </div>
@@ -295,8 +319,13 @@
                                 </div>
                                 <div class="text-cards">
                                     <h2 class="name">Lucas</h2>
-                                    <h3 class="cargo">Full Stack</h3>
-                                    <p>Usa a experiência para criar soluções intuitivas, </p>
+                                    <h3 class="cargo">Front-End | Design</h3>
+                                    <p>
+                                        Sou desenvolvedor web com o propósito de transformar sonhos em realidade
+                                        através da internet. Meu foco é entender a sua ideia e traduzi-la de
+                                        forma clara, moderna e eficaz, conectando você com o público que
+                                        está te procurando e levando seu projeto a um novo patamar.
+                                    </p>
                                 </div>
                                 <img src="./assets/btn_fechar.png" class="btnFechar" alt="">
                             </div>
@@ -306,30 +335,46 @@
                                     <img class="img-persona-card" src="./assets/michael.png"> 
                                 </div>
                                 <div class="text-cards">
-                                    <h2 class="name">Michael</h2>
+                                    <h2 class="name">Michael Olivera</h2>
+                                    <h3 class="cargo">Desenvolvedor Front-End</h3>
+                                    <p>
+                                        Desenvolvedor Front End com experiência em tecnologia mais ultilizada no mercado,
+                                        dedicado e criativo para levar os projetos do papel a realidade.
+                                    </p>
+                                </div>
+                                <img src="./assets/btn_fechar.png" class="btnFechar" alt="">
+                            </div>
+                            <!---------------GLEICE-------------------->
+                            <div class="cards6" id="positionCards">
+                                <div class="img-gleice">
+                                    <img class="img-persona-card" src="./assets/gleiciane.jpg"> 
+                                </div>
+                                <div class="text-cards">
+                                    <h2 class="name">Gleciane</h2>
                                     <h3 class="cargo">Full Stack</h3>
                                     <p>Usa a experiência para criar soluções intuitivas, </p>
                                 </div>
                                 <img src="./assets/btn_fechar.png" class="btnFechar" alt="">
                             </div>
-                            <!---------------AMANDA-------------------->
-                            <div class="cards6" id="positionCards">
-                                <div class="img-amanda">
-                                    <img class="img-persona-card" src="./assets/amanda.png"> 
+
+                            <!---------------ALESSANDRO-------------------->
+                            <div class="cards7" id="positionCards">
+                                <div class="img-alessandro">
+                                    <img class="img-persona-card" src="./assets/login-img.png"> 
                                 </div>
                                 <div class="text-cards">
-                                    <h2 class="name">Amanda</h2>
+                                    <h2 class="name">Alessandro</h2>
                                     <h3 class="cargo">Full Stack</h3>
                                     <p>Usa a experiência para criar soluções intuitivas, </p>
                                 </div>
                                 <img src="./assets/btn_fechar.png" class="btnFechar" alt="">
                             </div>
             <!----------------------CONTATO-------------------------------->
-            <section class="contato-container">
+            <section class="contato-container" id="contato">
                 <div class="contato">
                     <h2>Contato</h2>
                 </div>
-                    <p>Preencha o formulário e nós te retornaremos o mais breve possível!</p>
+                    <p >Preencha o formulário e nós te retornaremos o mais breve possível!</p>
                     <form action="" id="contato-form">
                         <div class="contato">
                             <input type="text" id="name" placeholder="Digite seu nome" required>
@@ -353,22 +398,24 @@
             <!-----------INÍCIO RODAPÉ--------------->
             <footer>
                 <div class="footer-container">
-                    <div id="logo-smart">
-                        <img src="assets/tela-do-computador-pessoal.png" alt=""> <span> Smart Web </span>
+                    <div id="email">
+                        <i class="fa-regular fa-envelope"> <span>smartweb.dev@outlook.com.br</span></i>
+                        <!-- <img src="assets/tela-do-computador-pessoal.png" alt=""> <span> Smart Web </span>-->
                     <!-- <i class="fa-solid fa-desktop"> <span> Smart Web </span></i>-->
                     </div>
 
                     <div class="contatos">
                         <ul class="icon-contatos">
                             <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a> </li>
+                           <!-- <li><a href="#"><i class="fa-brands fa-github"></i></a></li>-->
                             <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
                         </ul>
                     </div>
 
                 </div>
                 <div class="right">
-                    <p> © 2024 - Todos os direitos reservados. </p>
+                    <p> © 2024 - Todos os direitos reservados | Smart Web </p>
                 </div>
             </footer> <!-------------FIM RODAPÉ------------------------------>
         </main>
