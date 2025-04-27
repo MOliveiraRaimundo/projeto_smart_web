@@ -17,7 +17,7 @@ body{
     width: 100%;
     height: 80px;
     background-color: #fff;
-    padding: 0 2px;
+    padding: 0 0px;
     position: fixed;
     z-index: 9999;
     margin-bottom: 4rem;
@@ -326,7 +326,7 @@ nav{
     top: 5px;
     margin:0 70px 0 -70px;
     object-fit: cover;
-    width: 143px;
+    width: 135px;
     height: 165px;
     border-radius: 50%; 
     border: 2.5px solid #eee;  
@@ -442,8 +442,8 @@ nav{
     align-items: center;
     gap: 20px;
     background-color: #fff;
-    width: 634px;
-    height: 256px;
+    width: 734px;
+    height: 316px;
     border: 1px solid #ccc;
     border-radius: 8px;
     position: fixed;
@@ -458,8 +458,8 @@ nav{
     align-items: center;
     gap: 20px;
     background-color: #fff;
-    width: 634px;
-    height: 256px;
+    width: 734px;
+    height: 356px;
     border: 1px solid #ccc;
     border-radius: 8px;
     position: fixed;
@@ -475,8 +475,8 @@ nav{
     cursor: pointer;
 }
 .img-persona-card{
-    width: 143px;
-    height: 160px;
+    width: 170px;
+    height: 190px;
     border-radius: 50%;
     border: 1px solid #fff;
 }

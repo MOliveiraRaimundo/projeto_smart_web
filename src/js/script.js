@@ -24,7 +24,7 @@ const cards5 = document.querySelector(".cards5")
 const cards6 = document.querySelector(".cards6")
 const cards7 = document.querySelector(".cards7")
 
-const btnFechar = document.querySelector(".btnFechar")
+const btnFechar = document.querySelectorAll(".btnFechar")
 
 
 function enviarContato(){
@@ -61,74 +61,48 @@ btnEnviar.addEventListener("click", (e) =>{
     isEmailValid(email);
 });
 
-const mostrarCards1 = () =>{
-    cards1.style.left = "340px";
-    mascara.style.visibility = "visible";    
-}
-const mostrarCards2 = () =>{
-    cards2.style.left = "340px";
+function mostrarCard(card) {
+    card.style.left = "340px";
     mascara.style.visibility = "visible";
-}
-const mostrarCards3 = () =>{
-    cards3.style.left = "340px";
-    mascara.style.visibility = "visible";
-}
+  }
+  
+  function esconderCard(card) {
+    card.style.left = "-1000px";
+    mascara.style.visibility = "hidden";
+  }
 
-const mostrarCards4 = () =>{
-    cards4.style.left = "340px";
-    mascara.style.visibility = "visible";
-}
-const mostrarCards5 = () =>{
-    cards5.style.left = "340px";
-    mascara.style.visibility = "visible";
-}
-const mostrarCards6 = () =>{
-    cards6.style.left = "340px";
-    mascara.style.visibility = "visible";
-}
-const mostrarCards7 = () =>{
-    cards7.style.left = "340px";
-    mascara.style.visibility = "visible";
-}
-
-
-const fecharCars = () =>{
-    positionCards.style.left = "-2000px";
-}
-btnGabriel.addEventListener("click", (e) =>{
+  btnGabriel.addEventListener("click", (e) => {
     e.preventDefault();
-    mostrarCards1()
-})
+    mostrarCard(cards1);
+  });
 
-btnCarol.addEventListener("click", (e) =>{
+  btnCarol.addEventListener("click", (e) => {
     e.preventDefault();
-    mostrarCards2()
-})
-
-btnIngrid.addEventListener("click", (e) =>{
-    e.preventDefault()
-    mostrarCards3();
-})
+    mostrarCard(cards2);
+  });
 
 btnLucas.addEventListener("click", (e) =>{
     e.preventDefault()
-    mostrarCards4();
+    mostrarCard(cards4);
 })
 
 btnMichael.addEventListener("click", (e) =>{
     e.preventDefault()
-    mostrarCards5();
+    mostrarCard(cards5);
 })
 
 btnGleice.addEventListener("click", (e) =>{
     e.preventDefault()
-    mostrarCards6();
+    mostrarCard(cards6);
 })   
 btnAlessandro.addEventListener("click", (e) =>{
     e.preventDefault();
-    mostrarCards7();
+    mostrarCard(cards7);
 })
-btnFechar.addEventListener("click", (e) =>{
-   fecharCars()
-   mascara.style.visibility = "hidden"
+btnFechar.forEach(botao =>{
+    botao.addEventListener("click", (e) =>{
+        e.preventDefault();
+        botao.closest(".cards1, .cards2, .cards3, .cards4, .cards5, .cards6, .cards7").style.left = "-1000px";
+        mascara.style.visibility = "hidden";
+    })
 })
