@@ -83,21 +83,21 @@ function mostrarCard(card) {
 
 btnLucas.addEventListener("click", (e) =>{
     e.preventDefault()
-    mostrarCard(cards4);
+    mostrarCard(cards3);
 })
 
 btnMichael.addEventListener("click", (e) =>{
     e.preventDefault()
-    mostrarCard(cards5);
+    mostrarCard(cards4);
 })
 
 btnGleice.addEventListener("click", (e) =>{
     e.preventDefault()
-    mostrarCard(cards6);
+    mostrarCard(cards5);
 })   
 btnAlessandro.addEventListener("click", (e) =>{
     e.preventDefault();
-    mostrarCard(cards7);
+    mostrarCard(cards6);
 })
 btnFechar.forEach(botao =>{
     botao.addEventListener("click", (e) =>{
@@ -106,3 +106,11 @@ btnFechar.forEach(botao =>{
         mascara.style.visibility = "hidden";
     })
 })
+
+
+
+
+
+
+
+
