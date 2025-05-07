@@ -15,6 +15,9 @@ const btnAlessandro = document.querySelector("#btnAlessandro")
 const positionCards = document.querySelector(".positionCards")
 const mascara = document.querySelector("#mascara")
 
+const mobileMenu = document.querySelector(".mobile-menu")
+const nav = document.querySelector(".nav")
+
 
 const cards1 = document.querySelector(".cards1")
 const cards2 = document.querySelector(".cards2")
@@ -107,6 +110,13 @@ btnFechar.forEach(botao =>{
     })
 })
 
+//RESPONSIVO MENU//
+
+mobileMenu.addEventListener("click", (e) =>{
+    e.preventDefault()
+    nav.classList.toggle("active")
+    
+})
 
 
 

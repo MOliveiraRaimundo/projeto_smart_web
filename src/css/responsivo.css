@@ -1,0 +1,360 @@
+/*TABLET*/
+@media(max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        width:auto;
+    }
+    .navbar-container{
+        width: 100%;
+    }
+    
+    .mobile-menu {
+        cursor: pointer;
+        margin-top: auto;
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 999;
+    }
+
+    .mobile-menu div{
+        width: 32px;
+        height: 4px;
+        background-color: rgb(25, 25, 161);
+        margin: 8px;
+        display: block;
+        transition: 3s;
+    }
+    
+    .nav.active .mobile-menu .line1{
+        transform: rotate(-45deg) translate(-10px, 8px);
+    }
+
+    .nav.active .mobile-menu .line2 {
+        opacity: 0;
+    }
+    
+    .nav.active .mobile-menu .line3 {
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+
+    .navbar-items{
+        position: absolute;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #ccc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 998;
+
+    }
+
+    .navbar-items li{
+        margin-left: 0;
+        opacity: 0;
+        margin-bottom: 25px;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        transform: translateX(50px);
+    }
+
+    
+    .nav.active .navbar-items{
+        transform: translateX(0);
+    }
+
+    .nav.active .navbar-items li {
+        opacity: 1;
+        transform: translateX(0);
+        transition-delay: 0.3s;
+    }
+
+    #carrossel{
+        flex-direction: column;
+    }
+
+    .title{
+        margin-top: 5rem;
+    }
+
+    .section-sobre{
+        margin-top: 4rem;
+    }
+
+    #container-nos {
+        width: auto;
+        height:auto;
+    }
+
+    .missao, 
+    .visao, 
+    .valores {
+        width: auto;
+        height: 650px;
+      
+    }
+    .cards1, .cards2, .cards3,
+    .cards4, .cards5, .cards6{
+        top:0;
+        width: 100vw;
+        height: 100vh;
+        margin-left: -338px;
+        flex-direction: column;
+    }
+
+.btnFechar{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.text-cards p{
+    width: 400px;
+    text-align: justify;
+}
+
+.fa-envelope{
+    margin-left: 240px;
+}
+}
+
+@media(max-width: 576px){
+    .title{
+        font-size: 3rem;
+    }
+    .sub-title-main{
+        font-size: 1rem;
+    }
+    .text-main{
+        width: 400px;
+    }
+    #btn_fale-conosco{
+        width: 150px;
+        font-size: 12px;
+    }
+    #banner-layer #img-carrossel{
+        width: 400px;
+        height: 300px;
+        margin-left: 50px;
+    }
+
+    .container-valores{
+        flex-direction: column;
+    }
+    #container-nos {
+        width: 90%;
+        height: auto;
+    }
+    .missao, .visao, .valores {
+        width: 90%;
+        height: auto;
+    }
+
+    .portfolio h1 {
+        font-size: 18px;
+    }
+    #text-service {
+        font-size: 17px;
+    }
+
+    .title-about {
+        font-size: 20px;
+    }
+    .text p {
+        font-size: 18px;
+    }
+    .information {
+        width: 220px;
+        height: 270px;
+    }
+    .name-function {
+        top: 163px;
+    }
+    .name-function h2{
+        font-size: 19px;
+    }
+    .btnSaibaMais {
+        top: 15px;
+    }
+    .img-persona {
+        width: 120px;
+        height: 140px;
+        margin: 0 70px 0 -55px;
+    }
+
+    .contato input {
+        width: 400px;
+    }
+    #contato-form textarea {
+        width: 400px;
+    }
+    .contato-container input[type="submit"] {
+        width: 400px;
+    }
+    #logo-whats {
+        width: 40px;
+    }
+    .contato h2 {
+        font-size: 2.5rem;
+    }
+    .fa-envelope{
+        margin-left: 129px;
+    }
+
+}
+
+@media(max-width: 425px){
+    body,
+    html{
+        overflow-x: hidden;
+    }
+#carrossel{
+     margin-left:  10px;
+    }
+    .title{
+        text-align: center;
+        font-size: 2rem;
+    }
+    #banner-layer{
+       width: auto;
+    }
+
+    .section-sobre{
+       margin-left: 10px ;
+    }
+    #sobre-nos{
+        margin-bottom: 5rem;
+    }
+    #sobre-nos{
+        margin-top: 30px;
+        width: 360px;
+        margin-left: 28px;
+    }
+    .missao, 
+    .visao, 
+    .valores {
+       width: 322px;
+       height: auto; 
+    }
+    .text {
+        font-size: 14px;
+    }
+
+    .container-portfolio{
+        width: 519px;
+        margin-left: -70px;
+    }
+
+    .container-portfolio h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .text p {
+        font-size: 15px;
+    }
+
+
+    .cards1, .cards2, .cards3,
+    .cards4, .cards5, .cards6{
+        top: 89px;
+        width: 80vw;
+        height: 83vh;
+        margin-left: -302px;
+        flex-direction: column;
+    }
+    .text-cards p {
+        width: 250px;
+    }
+    .img-persona{
+        width: 104px;
+        height: 123px;
+        margin-left: -48px;
+    }
+    .img-persona-card {
+        width: 101px;
+        height: 100px;
+    }
+
+    #img-carol{
+        width: 125px;
+        height: 139px;
+        margin-top: -60px;
+    }
+    #img-michael{
+        width: 125px;
+        height: 139px;
+        margin-top: -60px;
+    }
+    .information {
+        width: 150px;
+        height: 250px;
+    }
+    .name-function {
+        top: 143px;
+    }
+    .name-function h2{
+        font-size: 19px;
+    }
+    .text-cards p {
+        width: 236px;
+        font-size: 13px;
+    }
+    .btnFechar{
+        top: 0;
+        right: 0;
+    }
+
+    .contato-container{
+        margin-left: 0px;
+    }
+    .contato{
+        width: 100%;
+    }
+    .contato-container p{
+       margin-left: 8px;
+    }
+
+    #contato-form{
+        margin: auto;
+    }
+    .contato input {
+        width: 378px;
+        margin-left: -10px;
+    }
+    #contato-form textarea {
+      width: 379px;
+      margin-left: -10px;
+    }
+    .contato-container input[type="submit"] {
+        margin-left: -12px;
+        width: 380px;
+    }
+    footer {
+        width: 124%;
+    }
+       
+    .fa-envelope {
+        margin-left: 70px;
+    }
+    #logo-whats {
+        width: 30px;
+        right: 0;
+    }
+    .right p{
+        margin-left: -96px;
+    }
+
+}
+
+    
+
