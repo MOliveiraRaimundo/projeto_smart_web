@@ -118,7 +118,73 @@ mobileMenu.addEventListener("click", (e) =>{
     
 })
 
-
+// Carrossel automático
+document.addEventListener('DOMContentLoaded', function() {
+    // Dados dos slides do carrossel
+    const slidesData = [
+        {
+            title: "Smart Web",
+            subtitle: "Transforme sua ideia em realidade agora!",
+            text: "Estamos prontos para ajudar sua empresa a alcançar novos horizontes, inovando e ampliando suas possibilidades. Juntos, podemos fazer o impossível se tornar possível. Fale conosco e descubra como podemos realizar o seu sonho com a força da tecnologia!",
+            image: "./assets/banner-img - Copia.jpg"
+        },
+        {
+            title: "Desenvolvimento Web",
+            subtitle: "Soluções personalizadas para o seu negócio",
+            text: "Criamos sites responsivos e modernos que se adaptam a qualquer dispositivo. Nossa equipe utiliza as melhores tecnologias do mercado para garantir eficiência, segurança e uma excelente experiência ao usuário.",
+            image: "./assets/site-loja.png"  //Substitua pelo caminho da sua segunda imagem
+        },
+        {
+            title: "Marketing Digital",
+            subtitle: "Aumente sua presença online",
+            text: "Estratégias completas de marketing digital para impulsionar sua marca na internet. Trabalhamos com SEO, redes sociais e campanhas digitais para aumentar seu alcance e converter visitantes em clientes.",
+            image: "./assets/marketing-digital.jpg" // Substitua pelo caminho da sua terceira imagem
+        }
+    ];
+    
+    // Elementos do DOM
+    const titleElement = document.querySelector('.main-banner .title');
+    const subtitleElement = document.querySelector('.main-banner .sub-title-main');
+    const textElement = document.querySelector('.main-banner .text-main');
+    const imageElement = document.getElementById('img-carrossel');
+    
+    let currentSlideIndex = 0;
+    
+    // Função para atualizar o slide
+    function updateSlide(index) {
+        // Aplicar fadeOut
+        titleElement.style.opacity = 0;
+        subtitleElement.style.opacity = 0;
+        textElement.style.opacity = 0;
+        imageElement.style.opacity = 0;
+        
+        // Esperar um pouco antes de atualizar o conteúdo
+        setTimeout(() => {
+            const slide = slidesData[index];
+            
+            // Atualizar conteúdo
+            titleElement.textContent = slide.title;
+            subtitleElement.textContent = slide.subtitle;
+            textElement.textContent = slide.text;
+            imageElement.src = slide.image;
+            
+            // Aplicar fadeIn
+            titleElement.style.opacity = 1;
+            subtitleElement.style.opacity = 1;
+            textElement.style.opacity = 1;
+            imageElement.style.opacity = 1;
+        }, 500);
+    }
+    
+    // Função para avançar para o próximo slide
+    function nextSlide() {
+        currentSlideIndex = (currentSlideIndex + 1) % slidesData.length;
+        updateSlide(currentSlideIndex);
+    }
+    
+    // Iniciar o carrossel automático
+    setInterval(nextSlide, 5000); // Muda slide a cada 5 segundos
+});
 
 
 
