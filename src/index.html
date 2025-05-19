@@ -28,7 +28,7 @@
                 </div>
 
                 <ul class="navbar-items">
-                    <li><a href="#"> Home</a></li>
+                    <li><a href="#carrossel"> Home</a></li>
                     <li><a href="#description">Sobre</a> </li>
                     <li><a href="#portfolios">Portfólio</a></li>
                     <li><a href="#team">Membros</a> </li>
@@ -189,9 +189,58 @@
                     temos o que você precisa para dar o próximo passo no universo digital.
                 </p>
 
-                <div class="container-portfolio">
-                    <h2>EM CONSTRUÇÃO</h2>
+                 <div class="portfolio-carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div class="portfolio-item">
+                    <img src="./assets/site-adv-removido.png" alt="Site Institucional">
+                    <div class="portfolio-info">
+                        <h3>Site Advogacia</h3>
+                        <p>Design elegante e profissional para empresas que desejam uma presença online sólida.</p>
+                    </div>
                 </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="portfolio-item">
+                    <img src="./assets/site-moda-glaucea.jpg" alt="E-commerce">
+                    <div class="portfolio-info">
+                        <h3>Loja Virtual</h3>
+                        <p>Plataforma completa para venda de produtos online com gestão de estoque e pagamentos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="portfolio-item">
+                    <img src="/api/placeholder/600/400" alt="Blog Pessoal">
+                    <div class="portfolio-info">
+                        <h3>Blog Pessoal</h3>
+                        <p>Layout clean e responsivo para compartilhamento de conteúdo e construção de audiência.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="portfolio-item">
+                    <img src="/api/placeholder/600/400" alt="Portfólio Criativo">
+                    <div class="portfolio-info">
+                        <h3>Portfólio Criativo</h3>
+                        <p>Exiba seus trabalhos e conquistas de forma visualmente impactante e profissional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Botões de navegação manual -->
+        <button class="carousel-button prev">&#10094;</button>
+        <button class="carousel-button next">&#10095;</button>
+        
+        <!-- Indicadores de slide (bolinhas) -->
+        <div class="carousel-indicators">
+            <span class="indicator active" data-index="0"></span>
+            <span class="indicator" data-index="1"></span>
+            <span class="indicator" data-index="2"></span>
+            <span class="indicator" data-index="3"></span>
+        </div>
+    </div>
             </section>
 
             <!------INÍCIO SEÇÃO MEMBROS-->
@@ -395,7 +444,7 @@
                     <h2>Contato</h2>
                 </div>
                     <p >Preencha o formulário e nós te retornaremos o mais breve possível!</p>
-                    <form action="" id="contato-form">
+                    <form action="https://formsubmit.co/smartweb.dev@outlook.com.br" method="POST" id="contato-form">
                         <div class="contato">
                             <input type="text" id="name" placeholder="Digite seu nome" required>
                         </div>
@@ -404,6 +453,8 @@
                         </div>
 
                         <textarea name="message" id="message" placeholder="Deseja nos deixar uma mensagem?" required></textarea>
+                        <input type="hidden" name="_next" value="https://www.smartweb.dev.br/obrigado.html">
+                        <input type="hidden" name="_captcha" value="false">
                         <input type="submit" id="btn-enviar" value="Enviar">
 
                         <div id="msgFeedBack"></div>
@@ -436,7 +487,7 @@
 
                 </div>
                 <div class="right">
-                    <p> © 2025 - Todos os direitos reservados | Smart Web </p>
+                    <p> © 2024 - Todos os direitos reservados | Smart Web </p>
                 </div>
             </footer> <!-------------FIM RODAPÉ------------------------------>
         </main>
