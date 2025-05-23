@@ -394,7 +394,6 @@
         font-size: 15px;
     }
 
-
     .cards1, .cards2, .cards3,
     .cards4, .cards5, .cards6{
         top: 89px;
@@ -411,6 +410,7 @@
         height: 123px;
         margin-left: -48px;
     }
+
     .img-persona-card {
         width: 101px;
         height: 100px;
