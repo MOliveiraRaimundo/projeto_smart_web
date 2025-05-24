@@ -314,7 +314,7 @@ nav{
     transform: translateY(-50%);
     width: 50px;
     height: 50px;
-    background-color: rgba(25, 25, 26, 0.7);
+    background-color: rgba(25, 25, 26, 0.411);
     color: white;
     border: none;
     border-radius: 50%;
@@ -342,7 +342,7 @@ nav{
 /* Indicadores de slides */
 .carousel-indicators {
     position: absolute;
-    bottom: 20px;
+    bottom: 8px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -354,13 +354,13 @@ nav{
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.055);
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .indicator.active {
-    background-color: rgb(25, 25, 161);
+    background-color: rgb(41, 41, 49);
     transform: scale(1.2);
 }
 /*SUBLINHADO*/
